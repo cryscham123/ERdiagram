@@ -436,7 +436,7 @@
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QG4uMyvaVe916guzzpad-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERmandOne;endFill=0;dashed=1;" parent="1" source="QG4uMyvaVe916guzzpad-101" target="C-vyLk0tnHw3VtMMgP7b-24" edge="1">
+        <mxCell id="QG4uMyvaVe916guzzpad-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToOne;endFill=0;dashed=1;" parent="1" source="QG4uMyvaVe916guzzpad-101" target="C-vyLk0tnHw3VtMMgP7b-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QG4uMyvaVe916guzzpad-101" value="STOCK" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
@@ -561,7 +561,7 @@
         <mxCell id="xXxGhkQa_JEqsOJQfINz-60" value="&lt;div&gt;각 재료별 창고에 남은 수량과 유통기한에 대한 정보를 담은 entity입니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="670" y="50" width="190" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xXxGhkQa_JEqsOJQfINz-61" value="Max Cardinality: Ingredient는 창고에 여러번 저장될 수 있습니다. 하나의 stock 정보에는 하나의 ingredient 정보만 저장될 것입니다.&lt;div&gt;Min Cardinality: 창고에 아직 들어오지 않은 ingredient가 존재할 수 있습니다. 창고에 들어오는 재료는 ingredient entity에 정보가 있는 재료입니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="xXxGhkQa_JEqsOJQfINz-61" value="Max Cardinality: Ingredient는 창고에 여러번 저장될 수 있습니다. 하나의 stock 정보에는 하나의 ingredient 정보만 저장될 것입니다.&lt;div&gt;Min Cardinality: 창고에 아직 들어오지 않은 ingredient가 존재할 수 있습니다. 창고에 들어있는데 계약이 만료되서 INGREDIENT entity에서 사라진 재료가 존재할 수 있습니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="550" y="190" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-63" value="Max Cardinality: 같은 공급업체에 대해 여러번 계약을 할 수 있습니다. 하나의 계약서에는 하나의 공급업체 정보만 들어갑니다.&lt;div&gt;Min Cardinality: 공급 업체는 계약한 정보가 있어야 합니다. 공급업체 계약서 리스트에는 현재 없는 공급업체가 존재할 수 있습니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
