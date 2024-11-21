@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1383" dy="1417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2490" dy="2074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -134,10 +134,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="QG4uMyvaVe916guzzpad-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;dashed=1;" parent="1" source="QG4uMyvaVe916guzzpad-1" target="CL-ACM64gnkJUaVsq3bg-39" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="490" />
+              <mxPoint x="390" y="490" />
+              <mxPoint x="390" y="345" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="QG4uMyvaVe916guzzpad-1" value="SUPPLIER" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="460" width="250" height="150" as="geometry" />
+          <mxGeometry x="120" y="520" width="250" height="150" as="geometry" />
         </mxCell>
         <mxCell id="QG4uMyvaVe916guzzpad-2" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="QG4uMyvaVe916guzzpad-1" vertex="1">
           <mxGeometry y="30" width="250" height="30" as="geometry" />
@@ -640,7 +646,7 @@
           <mxGeometry x="120" y="-470" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-55" value="Max Cardinality: 같은 레시피를 쓰는 메뉴가 여러번 등장할 수 있고,&amp;nbsp; 특정 메뉴에는 하나의 레시피만 존재하도록 설계했습니다.&lt;div&gt;Min Cardinality: 메뉴는 레시피가 있어야 하고, 특정 레시피에 대해 메뉴가 등장하지 않을 수 있습니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="410" y="-260" width="240" height="80" as="geometry" />
+          <mxGeometry x="410" y="-280" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-57" value="RECIPE entity는 버전 없이 하나의 레시피만 저장할 예정입니다. 예를 들면, 기존의 레시피를 업데이트할 일이 생긴다면 이전 레시피는 최신 레시피로 덮어씌워질 것입니다. 이렇게 하는 이유는 설계가 더 간단하기 때문인데, 실제 환경을 생각한다면 version attribute도 추가하는게 좋은 생각인것 같습니다." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-140" y="-140" width="250" height="80" as="geometry" />
@@ -649,25 +655,25 @@
           <mxGeometry x="400" y="-70" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-59" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;NUTRION entity의 정보들을 INGREDIENT entity에 같이 저장하는 방법도 생각해볼 수 있을것 같습니다.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="760" y="290" width="190" height="80" as="geometry" />
+          <mxGeometry x="770" y="320" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-60" value="&lt;div&gt;각 재료별 창고에 남은 수량과 유통기한에 대한 정보를 담은 entity입니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="670" y="50" width="190" height="50" as="geometry" />
+          <mxGeometry x="670" y="70" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-61" value="Max Cardinality: Ingredient는 창고에 여러번 저장될 수 있습니다. 하나의 stock 정보에는 하나의 ingredient 정보만 저장될 것입니다.&lt;div&gt;Min Cardinality: 창고에 아직 들어오지 않은 ingredient가 존재할 수 있습니다. 창고에 들어있는데 계약이 만료되서 INGREDIENT entity에 존재하는 재료만 창고에 들어옵니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="550" y="190" width="270" height="80" as="geometry" />
+          <mxGeometry x="710" y="170" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-63" value="Max Cardinality: 같은 공급업체에 대해 여러번 계약을 할 수 있습니다. 하나의 계약서에는 하나의 공급업체 정보만 들어갑니다.&lt;div&gt;Min Cardinality: 공급 업체는 계약한 정보가 있어야 합니다. 공급업체 계약서 리스트에는 현재 없는 공급업체가 존재할 수 있습니다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="130" y="620" width="270" height="80" as="geometry" />
+          <mxGeometry x="120" y="700" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-64" value="지금까지 계약한 모든 공급업체의 계약서 정보를 저장하는 entity" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="760" y="600" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-65" value="지금까지 계약한 모든 공급업체의 정보를 저장하는 entity" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-10" y="450" width="120" height="80" as="geometry" />
+          <mxGeometry x="-10" y="520" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xXxGhkQa_JEqsOJQfINz-66" value="INGREDIENT Entity는 공급업체로부터 구매 가능한 모든 재료 정보를 저장하고 있습니다. 설계의 편의를 위해 똑같은 재료여도 공급사가 다르면 다른 재료로 판단합니다." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-60" y="90" width="140" height="100" as="geometry" />
+          <mxGeometry x="-40" y="70" width="140" height="100" as="geometry" />
         </mxCell>
         <mxCell id="BC6oSdFHyOUcbJY4-xic-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="BC6oSdFHyOUcbJY4-xic-4" target="xXxGhkQa_JEqsOJQfINz-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
